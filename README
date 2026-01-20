@@ -1,0 +1,16 @@
+Open a new terminal and run "npm install" then run "rpm run start"
+
+within this section of server.js
+...(includeShipping && { // If we want to include shipping...
+                      // RETAIN only works if you include both emailAddress and phoneNumber below
+                        shipping: {
+                        // emailAddress:
+                        //         "buyer_shipping_email@example.com", // Include this to make it uneditable in Retain contact module
+                            phoneNumber: {
+                                countryCode: "1",
+                                nationalNumber: "4081111111",
+                            },
+
+
+
+If you don't pass the emailAddress or phoneNumber, you will be allowed to edit it, even if you put "RETAIN_CONTACT_INFO"

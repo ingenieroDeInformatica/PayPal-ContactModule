@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PayPal JS SDK Contact Module</title>
+        <style>
+        #contact-mode {
+            appearance: none;               /* remove native arrow */
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px 40px 10px 12px;   /* space for custom arrow */
+            font-size: 14px;
+            line-height: 1.5;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            }
+
+            #contact-mode:focus {
+            border-color: #0070ba;          /* PayPal blue */
+            box-shadow: 0 0 0 3px rgba(0,112,186,0.2);
+            outline: none;
+            }
+
+            label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            }
+</style>
+    </head>
+    <body style="background-color: lightcyan;">
+        <h1>PayPal JS SDK Contact Module</h1>
+            <label for="contact-mode">Select Contact Mode</label>
+            <select id="contact-mode">
+                <option value="NO_CONTACT_INFO">NO_CONTACT_INFO</option>
+                <option value="UPDATE_CONTACT_INFO">UPDATE_CONTACT_INFO</option>
+                <option value="RETAIN_CONTACT_INFO">RETAIN_CONTACT_INFO</option>
+            </select>
+        <div id="paypal-button-container"></div>
+
+            <div id="status" role="status" aria-live="polite"></div>
+
+        <p id="result-message">Pay using correct Sandbox account</p>
+
+       
+        <!-- Initialize the JS-SDK -->
+        <!-- <script
+            src="https://www.paypal.com/sdk/js?client-id=ATkBnzrL9rFaC-v3AeichWKDNODzjEw9p5Gk377FY2knuHZ3mPcUouv3GjoCqfI5zJ8L8juUeJV2qCCD&buyer-country=US&currency=USD&components=buttons"
+            data-sdk-integration-source="developer-studio"
+        ></script> -->
+        <script
+            src="https://www.paypal.com/sdk/js?client-id=AQUZtSGX2t85d-sj8moyZ_hrRxxtadgsEeHSvtdBu3ckfBeCFYfddyOZ_vAlAqcbfyKgzNfnTcEH5eaO&buyer-country=GB&currency=GBP&components=buttons"
+            data-sdk-integration-source="developer-studio"
+        ></script>
+        <script src="app.js"></script>
+       
+    </body>
+</html>
