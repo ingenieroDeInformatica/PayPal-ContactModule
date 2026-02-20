@@ -101,7 +101,7 @@ const createOrder = async (cart, contactPreference) => {
                         // emailAddress:
                         //         "buyer_shipping_email@example.com", // Include this to make it uneditable in Retain contact module
                             phoneNumber: {
-                                countryCode: "1",
+                                countryCode: "44",
                                 nationalNumber: "4081111111",
                             },
                             name: {
